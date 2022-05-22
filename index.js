@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 mongo.connectMongoose();
 
-app.use("/users",userRouter);
+app.use("/users",userRouter); // user
 app.use("/admin",adminRouter);
 app.use("/auth",authRouter);
 app.use("/pizza",pizzaRouter);
